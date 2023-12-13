@@ -1,2 +1,2 @@
-//variable player selection is equal to prompt with text “Choose your move”//
-const playerSelection = prompt("Choose your move");
+//variable player input is equal to the inputted value in prompt with text “Choose your move”//
+const playerInput = prompt("Choose your move");
