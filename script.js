@@ -68,3 +68,26 @@ function playRound(playerMove, computerMove) {
         }
     }
 }
+//best of 5 game function//
+function game() {
+    //Set initial scores to 0//
+    let playerScore = 0;
+    let computerScore = 0;
+    //loop i with an initial value of 1 until it reaches 6//
+    for (i=1; i < 6; i++) {
+        //log the scores at the beginning of iteration//
+        console.log(playerScore, computerScore);
+        //if player or comp wins, increase their score//
+        const gameResult = startGame();
+        if (gameResult === "win") {
+            ++playerScore;
+        }
+        else if (gameResult === "loss") {
+            ++computerScore;
+        }
+    }
+        //log final score once the iteration is over//
+    console.log(playerScore, computerScore);
+}
+//execute game when the page starts//
+game();
