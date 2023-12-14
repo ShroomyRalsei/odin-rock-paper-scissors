@@ -7,7 +7,7 @@ function startGame() {
     //Computer selection is the result of the computer choice//
     const computerSelection = getComputerChoice();
     //Nest play round with player and comp move args//
-    playRound(playerSelection, computerSelection);
+    return playRound(playerSelection, computerSelection);
 }
 
 //Get computer move//
