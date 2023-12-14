@@ -33,7 +33,8 @@ function playRound(playerMove, computerMove) {
     if(playerMove === "rock" || playerMove === "paper" || playerMove === "scissors") {
         if (playerMove === computerMove) {
         alert("That's a tie! Try again!");
-        startGame();
+        //nest additional startGame function and then return the result of the extra game//
+        return startGame();
         }
         else if (playerMove === "rock") {
             if (computerMove === "paper") {
