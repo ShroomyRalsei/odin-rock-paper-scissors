@@ -4,9 +4,9 @@ function startGame() {
 
     //Set player selection to player input in lower case//
     const playerSelection = playerInput.toLowerCase();
-
+    //Computer selection is the result of the computer choice//
     const computerSelection = getComputerChoice();
-
+    //Nest play round with player and comp move args//
     playRound(playerSelection, computerSelection);
 }
 
