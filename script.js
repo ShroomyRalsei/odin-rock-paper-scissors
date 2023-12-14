@@ -6,6 +6,8 @@ function startGame() {
     const playerSelection = playerInput.toLowerCase();
 
     const computerSelection = getComputerChoice();
+
+    playRound(playerSelection, computerSelection);
 }
 
 //Get computer move//
