@@ -5,7 +5,7 @@ function startGame() {
     //Set player selection to player input in lower case//
     const playerSelection = playerInput.toLowerCase();
 
-    getComputerChoice();
+    const computerSelection = getComputerChoice();
 }
 
 //Get computer move//
