@@ -2,11 +2,30 @@
 let playerScore = 0;
 let computerScore = 0;
 
+const resultAndScoreContainer = document.querySelector('#result-and-score-container');
+
 const rockButton = document.querySelector('#rock-button');
 
 const paperButton = document.querySelector('#paper-button');
 
 const scissorsButton = document.querySelector('#scissors-button');
+
+rockButton.addEventListener('click', () => {
+    const chooseRock = playRound("rock", getComputerChoice());
+    displayResult(chooseRock);
+})
+
+paperButton.addEventListener('click', () => {
+    const choosePaper = playRound("paper", getComputerChoice());
+
+    displayResult(choosePaper);
+})
+
+scissorsButton.addEventListener('click', () => {
+    const chooseScissors = playRound("scissors", getComputerChoice());
+
+    displayResult(chooseScissors);
+})
 
 //Get computer move//
 function getComputerChoice() {
