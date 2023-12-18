@@ -1,3 +1,7 @@
+//Set initial scores to 0//
+let playerScore = 0;
+let computerScore = 0;
+
 const rockButton = document.querySelector('#rock-button');
 
 const paperButton = document.querySelector('#paper-button');
