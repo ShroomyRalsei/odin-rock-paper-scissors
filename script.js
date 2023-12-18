@@ -77,3 +77,32 @@ function playRound(playerMove, computerMove) {
         }
     }
 }
+
+function displayResult(gameResult) {
+    const whoWon = document.createElement('p');
+
+    const scoreCount = document.createElement('p');
+
+    if(resultAndScoreContainer.innerHTML != ""){
+    resultAndScoreContainer.innerHTML = "";
+    }
+
+
+    if (gameResult === "win") {
+        ++playerScore;
+        whoWon.textContent = "You win!";
+    }
+    else if (gameResult === "loss") {
+        ++computerScore;
+        whoWon.textContent = "You lose!";
+    }
+    else if (gameResult === "tie") {
+        whoWon.textContent = "It's a tie!";
+    }
+
+    scoreCount.textContent = `Player: ${playerScore} , Computer: ${computerScore}`;
+
+    resultAndScoreContainer.appendChild(whoWon);
+
+    resultAndScoreContainer.appendChild(scoreCount);
+}
