@@ -68,26 +68,3 @@ function playRound(playerMove, computerMove) {
         }
     }
 }
-//best of 5 game function that plays the game 5 times (or extra times in the case of a tie) and keeps track of both the player and comp scores, returning the final scores once the 5 games are over.//
-function game() {
-    //Set initial scores to 0//
-    let playerScore = 0;
-    let computerScore = 0;
-    //loop iteration with an initial iteration count of 1 until it reaches 6//
-    for (i=1; i < 6; i++) {
-        //log the scores at the beginning of iteration//
-        console.log(playerScore, computerScore);
-        //if player or comp wins, increase their score//
-        const gameResult = startGame();
-        if (gameResult === "win") {
-            ++playerScore;
-        }
-        else if (gameResult === "loss") {
-            ++computerScore;
-        }
-    }
-        //log final score once the iteration is over//
-    console.log(playerScore, computerScore);
-}
-//execute game when the page starts//
-game();
