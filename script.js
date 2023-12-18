@@ -6,7 +6,7 @@ function startGame() {
     const playerSelection = playerInput.toLowerCase();
     //Computer selection is the result of the computer choice//
     const computerSelection = getComputerChoice();
-    //Nest play round with player and comp move args//
+    //Nest play round with player and comp move args, executing it and receiving its result, and then returning it//
     return playRound(playerSelection, computerSelection);
 }
 
@@ -68,12 +68,12 @@ function playRound(playerMove, computerMove) {
         }
     }
 }
-//best of 5 game function//
+//best of 5 game function that plays the game 5 times (or extra times in the case of a tie) and keeps track of both the player and comp scores, returning the final scores once the 5 games are over.//
 function game() {
     //Set initial scores to 0//
     let playerScore = 0;
     let computerScore = 0;
-    //loop i with an initial value of 1 until it reaches 6//
+    //loop iteration with an initial iteration count of 1 until it reaches 6//
     for (i=1; i < 6; i++) {
         //log the scores at the beginning of iteration//
         console.log(playerScore, computerScore);
