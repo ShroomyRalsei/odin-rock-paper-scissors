@@ -30,7 +30,7 @@ else if player move is rock, nest scenarios for each computer move and put alert
 function playRound(playerMove, computerMove) {
     if(playerMove === "rock" || playerMove === "paper" || playerMove === "scissors") {
         if (playerMove === computerMove) {
-        alert("That's a tie! Try again!");
+        return "tie";
         }
         else if (playerMove === "rock") {
             if (computerMove === "paper") {
