@@ -23,7 +23,7 @@ function getComputerChoice() {
         return "rock";
     }
 }
-/*Only run if player move is rock, paper or scissors. Play round (player, computer) > if player and computer move are equal, alert “that’s a tie!” and execute start game function.
+/*Only run if player move is rock, paper or scissors. Play round (player, computer) > if player and computer move are equal, alert “that’s a tie!”.
 
 else if player move is rock, nest scenarios for each computer move and put alerts for the results, else if player move is paper, nest scenarios for each computer move and put alerts for the results, else if player move is scissors, nest scenarios for each computer move and put alerts for the results.
 */
@@ -31,8 +31,6 @@ function playRound(playerMove, computerMove) {
     if(playerMove === "rock" || playerMove === "paper" || playerMove === "scissors") {
         if (playerMove === computerMove) {
         alert("That's a tie! Try again!");
-        //nest additional startGame function and then return the result of the extra game//
-        return startGame();
         }
         else if (playerMove === "rock") {
             if (computerMove === "paper") {
