@@ -34,31 +34,25 @@ function playRound(playerMove, computerMove) {
         }
         else if (playerMove === "rock") {
             if (computerMove === "paper") {
-                alert("You lose!");
                 return "loss";
             }
             else if (computerMove === "scissors") {
-                alert("You win!");
                 return "win";
             }
         }
         else if (playerMove === "paper") {
             if (computerMove === "scissors") {
-                alert("You lose!");
                 return "loss";
             }
             else if (computerMove === "rock") {
-                alert("You win!");
                 return "win";
             }
         }
         else if (playerMove === "scissors") {
             if (computerMove === "rock") {
-                alert("You lose!");
                 return "loss";
             }
             else if (computerMove === "paper") {
-                alert("You win!");
                 return "win";
             }
         }
